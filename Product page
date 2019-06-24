@@ -1,0 +1,598 @@
+//HTML code
+
+<div id="pageouter">
+  <header id="header">
+    <div class="logo">
+      <img id="header-img" src="https://cdn.designbump.com/wp-content/uploads/2012/03/coffee-latte-cafe-logos-logo-design-templates-inspiration-001.png" alt="Barista coffee logo"/>
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#making">Making</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="acc">
+    <h2>Home made coffees are served in the Heaven</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" name="email" id="email" placeholder="Enter your email" required/>
+      <input id="submit" type="submit" value="Done" class="button"/>
+    </form>
+  </section>
+  
+  <div class="deep">
+    <section id="features">
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="desc">
+          <h2>Healthy Ingredients</h2>
+          <p>Our coffee has healthy and nutritious ingredients to make you feel healthy and active.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="desc">
+        <h2>Instant preparation</h2>
+        <p>Our coffee powder is made as a ready to prepare instant coffee which obviously saves your valuable time.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-battery-full"></i></div>
+        <div class="desc">
+          <h2>Rich taste</h2>
+          <p>Our coffee has a rich taste which makes any person fall in love it.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <section id="Making">
+    <iframe id="video"
+            height="350"
+            width="500"
+   src="https://www.youtube.com/embed/As2j7V05dm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
+    </section>
+  
+  <section id="pricing">
+    <div class="types" id="barista">
+      <div class="beg" id="instant"> <h2>Barista Instant</h2></div>
+      <h2>$30</h2>
+      <ul>
+        <li>Good Taste</li>
+        <li>Rich Aroma</li>
+        <li>Easily Affordable</li>
+      </ul>
+      <button class="button">Get it</button> 
+    </div>
+    
+    <div class="types" id="barista">
+      <div class="int" id="grand"><h2>Barista Grand</h2></div>
+      <h2>$50</h2>
+      <ol>
+        <li>Grand Taste</li>
+        <li>From selected coffee seeds</li>
+        <li>instant preparation</li>
+      </ol>
+      <button class="button">Get it</button>
+    </div>
+  </section>
+  
+  <footer>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms&Conditions</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <span>Copyright 2019,Barista Brothers</span>
+  </footer>
+</div>body{
+  background-image:linear-gradient(45deg,#f2c94c,#ff512f);
+  font-family:sans-serif;
+  font-weight:110;
+  font-size:1em;
+}
+#pageouter{
+  position: relative;
+  left:15px;
+}
+li{
+  list-style:none;
+}
+a{
+  color:white;
+  text-decoration:blink;
+}
+a:hover{
+  color:black;
+  font-family:lobster;
+  font-style:italic;
+}
+input{
+  width:250px;
+  height:25px;
+}
+.button{
+  padding: 0 10px;
+  height: 25px;
+  width:100px;
+  font-size: 1.1em;
+  font-weight: 150;
+  text-transform: uppercase;
+  border: 1.5px black solid;
+  border-radius: 1px;
+  background:red;
+  cursor: pointer;
+}
+.grid{
+  display:flex;
+}
+@media (max-width: 1000px) {
+  .logo {
+    margin-top: 15px;
+    width:900px;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+#acc > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#acc input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#acc input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#acc input[type="submit"]:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #acc {
+    margin-top: 120px;
+  }
+}
+
+#features {
+  margin-top: 30px;
+}
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
+#Making {
+  margin-top: 50px;
+  margin-left:100px;
+  margin-right:100px;
+  display: flex;
+  justify-content:right;
+}
+
+#Making > iframe {
+  max-width:1000px;
+  width: 200%;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.types {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 3px solid gold;
+  border-radius: 3px;
+}
+
+.types > .beg,.int {
+  background-color:gold;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: 700;
+}
+
+.types > h2 {
+  margin-top: 15px;
+}
+
+.types > ol {
+  margin: 15px 0;
+}
+
+.types > ol > li {
+  padding: 5px 0;
+}
+
+.types > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.types > button:hover {
+  background-color:brown;
+  transition: background-color 1s;
+}
+
+@media (max-width: 400px) {
+  #pricing {
+    flex-direction:columns;
+  }
+  .types{
+    max-width: 300px;
+    width:100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
+
+
+    
+    //CSS code
+    
+    
+    
+    body{
+  background-image:linear-gradient(45deg,#f2c94c,#ff512f);
+  font-family:sans-serif;
+  font-weight:110;
+  font-size:1em;
+}
+#pageouter{
+  position: relative;
+  left:15px;
+}
+li{
+  list-style:none;
+}
+a{
+  color:white;
+  text-decoration:blink;
+}
+a:hover{
+  color:black;
+  font-family:lobster;
+  font-style:italic;
+}
+input{
+  width:250px;
+  height:25px;
+}
+.button{
+  padding: 0 10px;
+  height: 25px;
+  width:100px;
+  font-size: 1.1em;
+  font-weight: 150;
+  text-transform: uppercase;
+  border: 1.5px black solid;
+  border-radius: 1px;
+  background:red;
+  cursor: pointer;
+}
+.grid{
+  display:flex;
+}
+@media (max-width: 1000px) {
+  .logo {
+    margin-top: 15px;
+    width:900px;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+#acc > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#acc input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#acc input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#acc input[type="submit"]:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #acc {
+    margin-top: 120px;
+  }
+}
+
+#features {
+  margin-top: 30px;
+}
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
+#Making {
+  margin-top: 50px;
+  margin-left:100px;
+  margin-right:100px;
+  display: flex;
+  justify-content:right;
+}
+
+#Making > iframe {
+  max-width:1000px;
+  width: 200%;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.types {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 3px solid gold;
+  border-radius: 3px;
+}
+
+.types > .beg,.int {
+  background-color:gold;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: 700;
+}
+
+.types > h2 {
+  margin-top: 15px;
+}
+
+.types > ol {
+  margin: 15px 0;
+}
+
+.types > ol > li {
+  padding: 5px 0;
+}
+
+.types > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.types > button:hover {
+  background-color:brown;
+  transition: background-color 1s;
+}
+
+@media (max-width: 400px) {
+  #pricing {
+    flex-direction:columns;
+  }
+  .types{
+    max-width: 300px;
+    width:100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
